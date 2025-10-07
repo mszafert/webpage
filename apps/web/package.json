@@ -13,6 +13,7 @@
     "astro": "^5.14.1"
   },
   "devDependencies": {
-    "@repo/eslint-config": "workspace:*"
+    "@repo/eslint-config": "workspace:*",
+    "@repo/payload-types": "workspace:*"
   }
 }

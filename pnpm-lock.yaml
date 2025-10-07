@@ -60,6 +60,9 @@ importers:
       '@repo/eslint-config':
         specifier: workspace:*
         version: link:../../packages/eslint-config
+      '@repo/payload-types':
+        specifier: workspace:*
+        version: link:../../packages/payload-types
       '@types/node':
         specifier: ^22.5.4
         version: 22.15.3
@@ -85,6 +88,9 @@ importers:
       '@repo/eslint-config':
         specifier: workspace:*
         version: link:../../packages/eslint-config
+      '@repo/payload-types':
+        specifier: workspace:*
+        version: link:../../packages/payload-types
 
   packages/eslint-config:
     devDependencies:
@@ -121,6 +127,15 @@ importers:
       typescript-eslint:
         specifier: ^8.40.0
         version: 8.40.0(eslint@9.34.0)(typescript@5.9.2)
+
+  packages/payload-types:
+    devDependencies:
+      payload:
+        specifier: 3.59.0
+        version: 3.59.0(graphql@16.11.0)(typescript@5.9.2)
+      typescript:
+        specifier: ^5.9.2
+        version: 5.9.2
 
   packages/typescript-config: {}
 
@@ -9257,6 +9272,45 @@ snapshots:
       - typescript
       - utf-8-validate
 
+  payload@3.59.0(graphql@16.11.0)(typescript@5.9.2):
+    dependencies:
+      '@next/env': 15.5.0
+      '@payloadcms/translations': 3.59.0
+      '@types/busboy': 1.5.4
+      ajv: 8.17.1
+      bson-objectid: 2.0.4
+      busboy: 1.6.0
+      ci-info: 4.3.1
+      console-table-printer: 2.12.1
+      croner: 9.1.0
+      dataloader: 2.2.3
+      deepmerge: 4.3.1
+      file-type: 19.3.0
+      get-tsconfig: 4.8.1
+      graphql: 16.11.0
+      http-status: 2.1.0
+      image-size: 2.0.2
+      ipaddr.js: 2.2.0
+      jose: 5.9.6
+      json-schema-to-typescript: 15.0.3
+      minimist: 1.2.8
+      path-to-regexp: 6.3.0
+      pino: 9.5.0
+      pino-pretty: 13.0.0
+      pluralize: 8.0.0
+      qs-esm: 7.0.2
+      sanitize-filename: 1.6.3
+      scmp: 2.1.0
+      ts-essentials: 10.0.3(typescript@5.9.2)
+      tsx: 4.20.3
+      undici: 7.10.0
+      uuid: 10.0.0
+      ws: 8.18.3
+    transitivePeerDependencies:
+      - bufferutil
+      - typescript
+      - utf-8-validate
+
   peek-readable@5.4.2: {}
 
   picocolors@1.1.1: {}
@@ -9979,6 +10033,10 @@ snapshots:
     optionalDependencies:
       typescript: 5.7.3
 
+  ts-essentials@10.0.3(typescript@5.9.2):
+    optionalDependencies:
+      typescript: 5.9.2
+
   tsconfck@3.1.6(typescript@5.9.2):
     optionalDependencies:
       typescript: 5.9.2
@@ -9997,7 +10055,7 @@ snapshots:
   tsx@4.20.3:
     dependencies:
       esbuild: 0.25.10
-      get-tsconfig: 4.8.1
+      get-tsconfig: 4.11.0
     optionalDependencies:
       fsevents: 2.3.3
 
