@@ -1,7 +1,12 @@
 {
-  "extends": "@repo/typescript-config/base.json",
+  "extends": "../typescript-config/base.json",
   "compilerOptions": {
-    "outDir": "./dist"
+    "outDir": "./dist",
+    "baseUrl": ".",
+    "paths": {
+      "@repo/payload-types/collections": ["./src/collections/index.ts"],
+      "@repo/payload-types/types": ["./src/payload-types.ts"]
+    }
   },
   "include": ["src"],
   "exclude": ["node_modules"]
